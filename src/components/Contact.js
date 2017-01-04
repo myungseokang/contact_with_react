@@ -73,7 +73,8 @@ export default class Contact extends React.Component {
                 />
                 <div>{mapToComponents(this.state.contactData)}</div>
                 <ContactDetails
-                    isSeleted={this.state.seletedKey != -1}
+                    isSeleted={this.state.selectedKey != -1}
+                    contact={this.state.contactData[this.state.selectedKey]}
                 />
             </div>
         );

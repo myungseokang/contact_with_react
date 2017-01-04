@@ -3,7 +3,12 @@ import React from 'react';
 export default class ContactDetails extends React.Component {
     render() {
 
-        const details = (<div>Selected</div>);
+        const details = (
+            <div>
+                <p>{this.props.contact.name}</p>
+                <p>{this.props.contact.phone}</p>
+            </div>
+        );
         const blank = (<div>Not Selected</div>);
 
         return (
@@ -13,3 +18,10 @@ export default class ContactDetails extends React.Component {
         );
     }
 }
+
+ContactDetails.defaultProps = {
+    contact: {
+        name: '',
+        phone: ''
+    }
+};
