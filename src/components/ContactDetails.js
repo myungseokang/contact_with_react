@@ -15,6 +15,7 @@ export default class ContactDetails extends React.Component {
             <div>
                 <h2>Details</h2>
                 {this.props.isSeleted ? details : blank}
+                <button onClick={this.props.onRemove}>Remove</button>
             </div>
         );
     }
