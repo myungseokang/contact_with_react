@@ -25,5 +25,6 @@ ContactDetails.defaultProps = {
     contact: {
         name: '',
         phone: ''
-    }
+    },
+    onRemove: () => { console.log('onRemove not defined') }
 };
